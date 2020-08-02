@@ -1,0 +1,25 @@
+{
+    "name": "rob/cake-day",
+    "type": "project",
+    "require": {
+        "symfony/console": "^5.1",
+        "nesbot/carbon": "^2.37",
+        "doctrine/collections": "^1.6",
+        "league/csv": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "CakeDay\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CakeDay\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "symfony/var-dumper": "^5.1",
+        "phpunit/phpunit": "^9.2"
+    }
+}
