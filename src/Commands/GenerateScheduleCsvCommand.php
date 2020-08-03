@@ -77,8 +77,11 @@ class GenerateScheduleCsvCommand extends SingleCommandApplication
         }
     }
 
-    private function writeToConsole(ConsoleOutputInterface $output, CakeDaySchedule $cakeDaySchedule, $outputFilePath): void
-    {
+    private function writeToConsole(
+        ConsoleOutputInterface $output,
+        CakeDaySchedule $cakeDaySchedule,
+        string $outputFilePath
+    ): void {
         $consoleWriter = new CakeDayConsoleWriter($output);
         $consoleWriter->write($cakeDaySchedule);
 

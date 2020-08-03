@@ -17,6 +17,7 @@ class CakeDayCsvWriter extends CakeDayAbstractWriter
     {
         $this->outPutPath = $outPutPath;
     }
+
     protected function writeRows(array $rows): void
     {
         $writer = Writer::createFromPath($this->outPutPath, 'w+');

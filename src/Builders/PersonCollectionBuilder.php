@@ -10,7 +10,7 @@ use SplFileObject;
 
 class PersonCollectionBuilder
 {
-    public function buildFromFile(SplFileObject $file)
+    public function buildFromFile(SplFileObject $file): PersonCollection
     {
         $people = [];
         while (!$file->eof()) {

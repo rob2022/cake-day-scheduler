@@ -3,16 +3,15 @@ declare(strict_types=1);
 
 namespace CakeDay\Entities;
 
-use Carbon\Carbon;
 use Carbon\CarbonInterface;
 
 class Person
 {
     private string $name;
 
-    private Carbon $dateOfBirth;
+    private CarbonInterface $dateOfBirth;
 
-    public function __construct(string $name, Carbon $dateOfBirth)
+    public function __construct(string $name, CarbonInterface $dateOfBirth)
     {
         $this->setName($name);
         $this->setDateOfBirth($dateOfBirth);
@@ -28,7 +27,7 @@ class Person
         $this->name = $name;
     }
 
-    public function getDateOfBirth(): Carbon
+    public function getDateOfBirth(): CarbonInterface
     {
         return clone $this->dateOfBirth; // we'll clone here so we dont accidentally mutate the dob later.
     }
@@ -43,7 +42,7 @@ class Person
         return $dateOfBirth->setDate($year, $month, $day);
     }
 
-    public function setDateOfBirth(Carbon $dateOfBirth): void
+    public function setDateOfBirth(CarbonInterface $dateOfBirth): void
     {
         $this->dateOfBirth = $dateOfBirth;
     }

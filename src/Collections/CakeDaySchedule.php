@@ -28,7 +28,7 @@ class CakeDaySchedule extends ArrayCollection
         }
     }
 
-    public function getByDate(CarbonInterface $date)
+    public function getByDate(CarbonInterface $date): Day
     {
         $date = $date->copy()->startOfDay();
         /** @var Day $day */
