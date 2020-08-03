@@ -25,8 +25,8 @@ php cake-day.php -h
 ## Omissions + Improvements
 I was a little pushed for time, but if I had more I would like to address the following.
 
-- The tests are minimal and mostly just a feature test of CakeDayBuilder but this has given me a fairly high level of 
-confidence in the application, but I wouldn't be surprised if theirs are a couple of bugs in their.
+- The tests are minimal and mostly just a feature test of CakeDayScheduleBuilder but this has given me a fairly high 
+level of confidence in the application, but I wouldn't be surprised if theirs are a couple of bugs in their.
 
 - Handle the previous years unscheduled birthdays - Currently birthdays from the previous year that needed rescheduling 
 into the current year do not appear in the schedule.
